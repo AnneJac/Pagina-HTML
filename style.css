@@ -1,0 +1,130 @@
+/* Selector de tipo: Para darle estilo a una clase se usa un punto y el nombre de la clase de los elementos de html */
+h1 {
+  color: blue;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik Maze', cursive;
+}
+
+h2 {
+  color:blueviolet;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  color:blue;
+  font-size: 20px;
+}
+
+p,
+ul,
+ol {
+  font-size: 15px;
+}
+
+
+/* Selector de clase: Para darle estilo a una clase se usa un punto y el nombre de la clase de los elementos de html */
+.lista-de-html {
+  color:chocolate;
+}
+
+img {
+  width: 300px;
+  border-width: 10px;
+  border-color:blueviolet;
+  border-style: dotted solid dashed double;
+}
+
+.html {
+  width: 100px;
+  border-width: 10px;
+  border-color: blue;
+  border-style: inset;
+  border-radius: 50%;
+}
+
+/* Selector de div */
+div {
+  background-color: aquamarine;
+}
+
+/* Selector de id */
+#lenguaje-html {
+  font-size: 120%;
+  color: white;
+  background-color: aquamarine;
+}
+
+
+/* Padding */
+#picture {
+  background-color: pink;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 20%;
+  border-style: solid;
+}
+
+#estructura {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 40px 20px 40px 20px;
+  background-color:yellowgreen;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+/* Seletor de atributo, todos los elementos que tengan ese atributo serán modificados */
+/* Hay como cambiar las prioridades, para que se aplique un estilo específico sin importar los conflictos, se puede agregar !important en el estilo de css.  */
+img[alt] {
+  border-radius: 50% !important;
+}
+
+/* Seletor de atributo que tenga un valor específico */
+[type="radio"] {
+  margin: 40px;
+}
+
+/* Seletor de atributo de un enlace */
+a[href="https://developer.mozilla.org/es/docs/Web/HTML"] {
+  color: greenyellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Unidades de longitud */
+#contenedor-principal {
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  background-color:lightgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+  padding: 5px;
+  margin:5px;
+}
+
+.px {
+  background-color: red;
+  width: 200px;
+}
+
+.vw {
+  background-color:darkmagenta;
+  width: 20vw;
+}
+
+.em {
+  background-color: greenyellow;
+  width: 10em;
+}
+
+body {
+  background-color: skyblue;
+}
