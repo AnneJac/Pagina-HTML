@@ -1,0 +1,176 @@
+<!-- declaración al navegador de que versión de html se va a usar en el archivo -->
+<!DOCTYPE html>
+<!-- declarar el elemento html o elemento raiz, contiene a los demás elementos del archivo -->
+<html lang="es">
+   <!-- head se incluye cualquier archivo externo (css o js) o personalizar el titulo de la pagina. <head> tiene lo que se llama Metadata, y los elementos que actuan detrás de escena, como archivos css o js. Se puede personalizar el titulo de la pestaña del navegador de la página-->
+   <head>
+    <title>AppdeHTML</title>
+
+    <!--link es una etiqueta que funciona como un enlace detrás de escena. El atributo rel que es abrebiación de relationship, denomina una relación del documento vinculado con el doc actual -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Rubik+Maze&display=swap" rel="stylesheet">
+
+   </head>
+   <!-- body es donde se define la estructura de la pagina -->
+   <body>
+     <!--para crear encabezados se usa del h1 al h6 -->
+     <!-- El atributo style ayuda a aplicar ciertas propiedades css a ese elemento-->
+     <!--<h1 style="color:rgb(0, 110, 255)"> Página de HTML </h1>-->
+    <h1> Página de HTML </h1>
+    <h6> HTML </h6>
+
+    <!--para crear parrafos se usa del p -->
+    <p id="lenguaje-html"> El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos. </p>
+    <!-- La etiqueta <main> especifíca donde esta el contenido principal al navegador, no puede haber mas de un elemento main en el archivo-->
+      <main>
+        <h3> Lenguaje HTML </h3>
+        <!--La etiqueta <a> sirve para aplicar enlaces, se debe especificar el atributo href representado el destino de ese enlace-->
+        <!--El atributo target ayuda a especificar donde se quiere abrir el ese enlace-->
+        <!--por segurirdad es mejor añadir el atributo rel, para que no se vuelva a brir los datos ya cargados y prevenir ataques-->
+        <p> HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador Web. <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer"> Las marcas HTML </a> incluyen "elementos" especiales como: head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed, nav, output (en-US), progress, video, ul, ol, li y muchos otros. </p>
+
+        <!-- hred="#" se utiliza para enlaces internos-->
+        <a href="#parrafo-1"> La etiqueta de apertura </a>
+        <br>
+        <a href="#parrafo-2"> La etiqueta de cierre </a>
+        <br>
+        <a href="#parrafo-3"> Contenido </a> 
+        <br>
+        <a href="#parrafo-4"> El elemento </a>
+        <br>
+        <!--src es el valor que se le da al atributo, es abreviatura de source -->
+        <!--alt es el atributo, que debe tener toda imágen como una descripción alternativa que se presenta si no se descarga correctamente u otros -->
+        
+        <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer"> <img src="https://www.wikihow.com/images_en/thumb/3/35/4082-22-3.jpg/v4-460px-4082-22-3.jpg" alt="Ejemplo de código html"> </a>
+
+        <h2> Partes principales de los elementos </h2>
+        
+        <!-- id es un atributo de identificación unica-->
+        <h3 id="parrafo-1"> Etiqueta de apertura </h3>
+
+        <p> Consiste en el nombre del elemento (en este caso, p), encerrado por paréntesis angulares (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo—. </p>
+          
+        <h3 id="parrafo-2"> Etiqueta de cierre </h3>
+
+        <p> Ees igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—. </p>
+
+        <h3 id="parrafo-3"> Contenido </h3>
+
+        <p> Este es el contenido del elemento, que en este caso es sólo texto. </p>
+        
+        <h3 id="parrafo-4"> Elemento </h3>
+
+        <p> La etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento. </p>
+
+        <!-- hr crea una linea horizontal (horizon rule) no requiere etiqueta de cierre -->
+        <hr>
+
+        <!--<div> es un contenedor, si se aplica un cabio a este, se apliccará a todos los elementos dentro de el-->
+        <div>
+          <h2> Listas HTML </h2>
+
+          <!-- Se usa <strong> para indicar que el texto es importante o en negrita-->
+          <!-- Se usa s para tachar palabras -->
+          <h3> Lista de <strong> etiquetas </strong> básicas </h3>
+          
+
+          <!-- ul es para listas no ordenadas-->
+          <ul class="lista-de-html"> 
+            <li>body: para el contenido <strong> <s> etiquetas </s> </strong> </li>
+            <li> head: para información sobre el documento </li>
+            <li> div: división dentro del contenido </li>
+            <li> a: para enlaces </li>
+            <li> strong: para poner el texto en negrita </li>
+            <li> br: para saltos de línea </li>
+            <li> H1…H6: para títulos dentro del contenido </li>
+            <li> img: para añadir imágenes al documento </li>
+            <li> ol: para listas ordenadas </li>
+            <li> ul: para listas desordenadas </li>
+            <li> li: para elementos dentro de la lista </li>
+            <li> p: para parágrafos </li>
+            <li> span: para estilos de una parte del texto </li>
+          </ul>
+          <img src="imagenes/html.png" alt="html" class="html">
+
+          <!-- Se usa <em> para hacer la letra cursiva-->
+          <h3> Lista de <em> atributos </em> básicos </h3>
+
+          <!-- ol es para listas ordenadas-->
+          <ol class="lista-de-html">
+            <li> id = "texto"	Establece un identificador único a cada elemento dentro de una página HTML </li>
+            <li> class = "texto"	Establece la clase CSS que se aplica a los estilos del elemento </li>
+            <li> style = "texto"	Establece de forma directa los estilos CSS de un elemento </li>
+            <li> title = "texto"	Establece el título a un elemento (mejora la accesibilidad y los navegadores lo muestran cuando el usuario pasa el ratón por encima del elemento)</li>
+          </ol>
+          <a href="#" target="_blank" rel="noopener noreferrer"> <img src="descarga.png" alt="html" class="html"> </a>
+        </div>
+
+
+        <!-- <form> representa una colección de elementos asociados, de los cuales representan valores editables y son subidos a un servidor par ser procesados -->
+        <form action="/enviar-respuesta"> 
+          <!-- La etiqueta <label> sirve para seleccionar el texto del atributo radio, que sirve para seleccionar el boton de radio--><!-- Se puede relacionar más a la etiqueta con el botón de radio con el atributo for relacionandolo con un atributo id-->
+          <!--Para hacer un grupo de radio y que los elemntos esten en este grupo se utiliza el atributo name, así solo se marcará una sola de las opciones-->
+          <!--El atributo value le dice al servidor que valor se escogió-->
+          <label for="ordenada">
+            <input id="ordenada" type="radio" value="ordenada" name="ordenada-no-ordenada" checked> Lista ordenada
+          </label>
+
+          <!--br es una etiqueta que ayuda a hacer saltos de línea, no necesita etiqueta de cierre-->
+          <br>
+          <label for="no-ordenada">
+            <input id="no-ordenada" type="radio" value="no-ordenada" name="ordenada-no-ordenada"> Lista no ordenada
+          </label>
+          <br>
+          <br>
+
+          <!--Casilla de verificación con el valor checkbox-->
+          <!-- Para marcar casillas por defecto se utiliza el atributo checked -->
+          <label for="divertido">
+            <input id="divertido" type="checkbox" name="interes" checked> Divertido 
+          </label>
+          <br>
+          <label for="igual">
+            <input id="igual" type="checkbox" name="interes"> Da igual 
+          </label>
+          <br>
+          <label for="aburrido">
+            <input id="aburrido" type="checkbox" name="interes"> Aburrido 
+          </label>
+          <br>
+
+          <!--Texto y boton enviar-->
+          <!-- <imput> es el elemento para obtener valor de una respuesta del usuario-->
+          <!-- el atributo type sirve para especificar el tipo de respuesta requerida -->
+          <!--Para que un campo sea obligatorio se usa el atributo required-->
+          <input type="text" placeholder="URL requerida" required> </input>
+          <!-- Crear un boton -->
+          <button type="submit"> Enviar </button>
+          <br>
+
+          <div id="picture">
+            <img id="estructura" src="http://jairogarciarincon.com/img/clases/1019.jpg" alt="Estructura de página en código html">
+          </div>
+
+        </form> 
+      </main>
+      <br>
+      <br>
+
+      <!--Unidades de longitud-->
+      <div id="contenedor-principal">
+        <h2> Unidades de longitud</h2>
+        <div class="rectangulo px">200px de Ancho</div>
+        <div class="rectangulo vw">20vw de Ancho</div>
+        <div class="rectangulo em">15em de Ancho</div>
+      </div>
+
+      <!--- <footer> se utiliza para crear pie de pagina-->
+      <!--- <small> se utiliza para hacer algo más pequeño-->
+      <footer>
+        <p><small> Sin derechos de autor - <a href="https://github.com/AnneJac" target="_blank" rel="noopener noreferrer"> Git Anne Jácome </a> </small></p>
+      </footer>
+
+   </body>
+</html>
